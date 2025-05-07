@@ -1,10 +1,18 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const navItems = [
+    { name: "Home", href: "/#" },
+    { name: "Services", href: "#services" },
+    { name: "About Us", href: "#about" },
+    { name: "Portfolio", href: "#portfolio" },
+  ];
 
   return (
     <header className="bg-[#fdf3f3] text-[#3d3f4c] ">
@@ -17,10 +25,16 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 font-medium">
-          <li className="text-[#3d3f4c] font-semibold">Home</li>
-          <li className="hover:text-[#3d3f4c]">Services</li>
-          <li className="hover:text-[#3d3f4c]">About Us</li>
-          <li className="hover:text-[#3d3f4c]">Portfolio</li>
+          {navItems.map((item) => (
+            <li key={item.name}>
+              <Link
+                href={item.href}
+                className="text-[#3d3f4c] hover:text-black overflow-hidden"
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         {/* Hire Us Button */}
@@ -42,10 +56,16 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden px-6 pb-4">
           <ul className="flex flex-col space-y-3 font-medium">
-            <li className="text-[#3d3f4c] font-semibold">Home</li>
-            <li>Services</li>
-            <li>About Us</li>
-            <li>Portfolio</li>
+            {navItems.map((item) => (
+              <li key={item.name}>
+                <Link
+                  href={item.href}
+                  className="hover:text-[#3d3f4c] hover:font-semibold"
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
             <li>
               <button className="border border-red-400 text-red-500 hover:bg-red-100 px-4 py-2 rounded-md w-full">
                 Hire Us
