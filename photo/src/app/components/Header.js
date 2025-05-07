@@ -8,7 +8,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "/#" },
+    { name: "Home", href: "#home" },
     { name: "Services", href: "#services" },
     { name: "About Us", href: "#about" },
     { name: "Portfolio", href: "#portfolio" },
