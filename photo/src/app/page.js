@@ -7,12 +7,17 @@ import StudioLayout from "./components/Sections/StudioLayout";
 export default function Home() {
   return (
     <div>
-      <div className=" heros-section">{/* <Hero /> */}</div>
+      <div className=" heros-section">
+        <Hero />
+      </div>
       <div className="experience-section"></div>
       <div className="explore-section"></div>
-      <div className="creativity-section">{/* <CreativitySection /> */}</div>
+      <div className="creativity-section">
+        <CreativitySection />
+      </div>
       <div className="vision-section">
-        {/* <Grid /> <ExpertiseSection />{" "} */}
+        {/* <Grid /> */}
+        <ExpertiseSection />{" "}
       </div>
       <div className="gallery-section"></div>
       <div className="explore-section">
