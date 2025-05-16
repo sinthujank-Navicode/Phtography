@@ -4,6 +4,7 @@ import CreativitySection from "./components/Sections/CreativitySection";
 import Grid from "./components/Sections/Grid";
 import ExpertiseSection from "./components/Sections/ExpertiseSection";
 import StudioLayout from "./components/Sections/StudioLayout";
+import GalleryPage from "./components/Sections/Gallery";
 export default function Home() {
   return (
     <div>
@@ -19,7 +20,9 @@ export default function Home() {
         {/* <Grid /> */}
         <ExpertiseSection />{" "}
       </div>
-      <div className="gallery-section"></div>
+      <div className="gallery-section">
+        <GalleryPage />
+      </div>
       <div className="explore-section">
         <StudioLayout />
       </div>

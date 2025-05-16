@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { SlArrowRightCircle } from "react-icons/sl";
+
 export default function StudioLayout() {
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100 w-screen px-5 ">
-      <div className="bg-red-600 text-white p-8 rounded-2xl flex flex-col md:flex-row gap-6 items-center">
+      <div className="bg-red-600 text-white p-8 rounded-2xl flex flex-col md:flex-row gap-6 items-center relative min-h-[400px]">
         <div className="space-y-4 text-center md:text-left">
           <h2 className="text-4xl font-bold">Step Into Our World</h2>
           <p className="text-lg">
@@ -15,7 +16,7 @@ export default function StudioLayout() {
             Explore Our Studio <SlArrowRightCircle />
           </button>
         </div>
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-2 gap-2 relative w-[420px]">
           <Image
             src="/images/thumb2.jpg"
             alt="Studio Image 1"
@@ -34,8 +35,14 @@ export default function StudioLayout() {
             src="/images/thumb2.jpg"
             alt="Studio Image 3"
             width={200}
-            height={300}
-            className="rounded-xl"
+            height={500}
+            className="rounded-xl hidden md:block"
+            style={{
+              position: "absolute",
+              bottom: "150px",
+              right: "-50px",
+              color: "transparent",
+            }}
           />
         </div>
       </div>
