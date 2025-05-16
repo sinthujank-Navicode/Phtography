@@ -123,8 +123,8 @@ const CreativitySection = () => {
           className="mb-6 text-gray-700 text-sm sm:text-base md:text-lg"
         >
           With over 10 years of experience, we have captured countless moments
-          and crafted stunning visuals. Our team's dedication and passion have
-          led to numerous awards and...
+          and crafted stunning visuals.Our team&apos;s dedication and passion
+          have led to numerous awards and...
         </motion.p>
         <div className="flex flex-wrap gap-4 justify-center md:justify-start text-gray-800">
           <div className="text-lg sm:text-xl md:text-2xl font-bold">
