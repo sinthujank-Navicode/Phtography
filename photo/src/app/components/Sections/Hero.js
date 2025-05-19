@@ -19,7 +19,7 @@ const Hero = () => {
 
   return (
     <div>
-      <div className="min-h-screen flex items-center justify-center p-4 sm:p-6">
+      <div className="min-h-[70vh] flex items-center justify-center p-4 sm:p-6">
         <div className="max-w-6xl w-full flex flex-col md:flex-row md:items-center gap-8">
           {/* Text Section */}
           <motion.div
