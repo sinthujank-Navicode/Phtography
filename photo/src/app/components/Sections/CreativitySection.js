@@ -126,21 +126,21 @@ const CreativitySection = () => {
           and crafted stunning visuals.Our team&apos;s dedication and passion
           have led to numerous awards and...
         </motion.p>
-        <div className="flex flex-wrap gap-4 justify-center md:justify-start text-gray-800">
-          <div className="text-lg sm:text-xl md:text-2xl font-bold">
-            <p>
+        <div className="flex flex-wrap gap-4 justify-center md:justify-start text-gray-800 md:mt-[4rem]">
+          <div className="text-lg sm:text-xl md:text-sm font-bold">
+            <p className="md:text-2xl">
               <Counter end={550} />
             </p>
-            <p className="text-gray-500">Happy Clients</p>
+            <p className="text-gray-500 md:text-sm">Happy Clients</p>
           </div>
-          <div className="text-lg sm:text-xl md:text-2xl font-bold">
-            <p>
+          <div className="text-lg sm:text-xl md:text-sm font-bold">
+            <p className="md:text-2xl">
               <Counter end={38} />
             </p>
-            <p className="text-gray-500">Awards Won</p>
+            <p className="text-gray-500 ">Awards Won</p>
           </div>
-          <div className="text-lg sm:text-xl md:text-2xl font-bold">
-            <p>
+          <div className="text-lg sm:text-xl md:text-sm font-bold">
+            <p className="md:text-2xl">
               <Counter end={9000} />
             </p>
             <p className="text-gray-500">Captured Events</p>

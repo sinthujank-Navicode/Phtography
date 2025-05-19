@@ -2,7 +2,7 @@ export default function HeroSection() {
   const imageSrc = "/images/experience.jpg";
 
   return (
-    <section className=" min-h-[80vh] flex items-center justify-around px-6 py-12">
+    <section className=" min-h-[60vh] flex items-center justify-around px-6 py-12">
       <div className="grid grid-cols-1 md:flex gap-6 max-w-7xl w-full items-stretch">
         {/* Left Column - 4 Boxes */}
         <div className="hidden md:flex flex-col justify-around gap-1 ">
