@@ -13,7 +13,7 @@ export default function GalleryPage() {
   return (
     <div className=" min-h-screen p-6">
       {/* Header Section */}
-      <div className="text-center max-w-2xl mx-auto mb-10">
+      <div className="text-start max-w-2xl mx-auto mb-10">
         <h1 className="text-4xl font-bold text-gray-800 mb-3">
           Journey Through Our Gallery
         </h1>
@@ -23,8 +23,8 @@ export default function GalleryPage() {
       </div>
 
       {/* Gallery Grid */}
-      <div className="grid grid-cols-3 grid-rows-3 md:gap-7 gap-1 max-w-7xl mx-auto h-[90vh]">
-        {images.map((img, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 md:gap-7 gap-1 max-w-7xl mx-auto  h-auto md:h-[90vh]">
+      {images.map((img, index) => (
           <div key={index} className={`${img.classes} p-1`}>
             <Image
               src={img.src}
