@@ -51,7 +51,7 @@ export default function ExpertiseSection() {
   const progressPercentage = (currentIndex + 1) * 50;
 
   return (
-    <div className="bg-pink-50 p-4 md:p-10 i">
+    <div className="bg-pink-50 p-4 md:p-1 md:py-13 max-w-7xl mx-auto">
       <h1 className="text-xl md:text-3xl font-bold mb-4 text-gray-600 text-center md:text-left">
         Your Vision, Our Expertise
       </h1>
@@ -72,7 +72,7 @@ export default function ExpertiseSection() {
         {displayedImages.map((image, index) => (
           <div
             key={index}
-            className={`transform transition-all duration-300 ${
+            className={`transform transition-all duration-300 md:ml-[-1rem] ${
               index % 3 === 1
                 ? "mt-4 md:mt-8"
                 : index % 3 === 2
