@@ -7,6 +7,7 @@ import StudioLayout from "./components/Sections/StudioLayout";
 import GalleryPage from "./components/Sections/Gallery";
 import HeroSection from "./components/Sections/Experience";
 import Expertise from "./components/Sections/expect";
+import VideoSection from "./components/Sections/VideoSection";
 export default function Home() {
   return (
     <div>
@@ -27,6 +28,9 @@ export default function Home() {
       </div>
       <div className="gallery-section">
         <GalleryPage />
+      </div>
+      <div className="video-section w-fit">
+        <VideoSection />
       </div>
       <div className="explore-section">
         <StudioLayout />
