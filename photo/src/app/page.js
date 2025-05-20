@@ -7,6 +7,7 @@ import StudioLayout from "./components/Sections/StudioLayout";
 import GalleryPage from "./components/Sections/Gallery";
 import HeroSection from "./components/Sections/Experience";
 import Expertise from "./components/Sections/expect";
+import MakeupSection from "./components/Sections/MakeupSection"
 export default function Home() {
   return (
     <div>
@@ -19,6 +20,9 @@ export default function Home() {
       <div className="explore-section">
         <Expertise />
       </div>
+      <div className="makeup-section">
+        {/* <MakeupSection /> */}
+      </div>
       <div className="creativity-section">
         <CreativitySection />
       </div>
@@ -29,7 +33,7 @@ export default function Home() {
         <GalleryPage />
       </div>
       <div className="explore-section">
-        <StudioLayout />
+        {/* <StudioLayout /> */}
       </div>
     </div>
   );

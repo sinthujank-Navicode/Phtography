@@ -3,7 +3,7 @@ import { SlArrowRightCircle } from "react-icons/sl";
 
 export default function StudioLayout() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100 w-screen px-5 ">
+    <div className="flex items-center justify-center h-screen  w-screen px-5 ">
       <div className="bg-red-600 text-white p-8 rounded-2xl flex flex-col md:flex-row gap-6 items-center relative min-h-[400px]">
         <div className="space-y-4 text-center md:text-left">
           <h2 className="text-4xl font-bold">Step Into Our World</h2>
