@@ -7,6 +7,7 @@ import StudioLayout from "./components/Sections/StudioLayout";
 import GalleryPage from "./components/Sections/Gallery";
 import HeroSection from "./components/Sections/Experience";
 import Expertise from "./components/Sections/expect";
+import MakeupSection from "./components/Sections/MakeupSection";
 import VideoSection from "./components/Sections/VideoSection";
 import Wedding from "./components/Sections/wedding";
 export default function Home() {
@@ -21,7 +22,10 @@ export default function Home() {
       <div className="explore-section">
         <Expertise />
       </div>
-      <Wedding />
+      <div className="makeup-section">
+        <MakeupSection />
+      </div>
+      <div className="carRent-section"></div>
       <div className="creativity-section">
         <CreativitySection />
       </div>
@@ -31,7 +35,7 @@ export default function Home() {
       <div className="gallery-section">
         <GalleryPage />
       </div>
-      <div className="video-section w-fit">
+      <div className="video-section ">
         <VideoSection />
       </div>
 

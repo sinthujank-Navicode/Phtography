@@ -92,7 +92,7 @@ const VideoSection = () => {
   }, []);
 
   return (
-    <main className="px-4 md:px-8 py-10 bg-gray-50 ">
+    <main className="px-4 md:px-8 py-10  ">
       {/* Title */}
       <div className="text-center mb-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-800">
