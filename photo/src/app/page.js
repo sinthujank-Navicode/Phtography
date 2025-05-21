@@ -13,7 +13,7 @@ import Wedding from "./components/Sections/wedding";
 export default function Home() {
   return (
     <div>
-      <div className=" heros-section">
+      <div className="heros-section">
         <Hero />
       </div>
       <div className="experience-section">
@@ -25,7 +25,9 @@ export default function Home() {
       <div className="makeup-section">
         <MakeupSection />
       </div>
-      <div className="carRent-section"></div>
+      <div className="carRent-section">
+        <Wedding />
+      </div>
       <div className="creativity-section">
         <CreativitySection />
       </div>
