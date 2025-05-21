@@ -11,7 +11,7 @@ const images = [
 
 export default function GalleryPage() {
   return (
-    <div className=" min-h-screen p-6">
+    <div className=" md:min-h-screen min-h-[60vh] p-6">
       {/* Header Section */}
       <div className="text-start max-w-2xl mx-auto mb-10">
         <h1 className="text-4xl font-bold text-gray-800 mb-3">

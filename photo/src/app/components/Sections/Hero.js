@@ -6,7 +6,7 @@ import { motion, useAnimation } from "framer-motion";
 
 const images = [
   "/images/thumb1.jpg",
-  "/images/thumb2.jpg",
+  "/images/thumb1.jpg",
   "/images/thumb1.jpg",
 ];
 
@@ -19,8 +19,8 @@ const Hero = () => {
 
   return (
     <div>
-      <div className="min-h-[70vh] flex items-center justify-center p-4 sm:p-6">
-        <div className="max-w-6xl w-full flex flex-col md:flex-row md:items-center gap-8">
+      <div className="min-h-[70vh]  flex items-center justify-center p-4 sm:p-6 overflow-x-hidden">
+        <div className="w-full max-w-[83rem] flex flex-col md:flex-row md:items-center gap-12">
           {/* Text Section */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -28,8 +28,8 @@ const Hero = () => {
             transition={{ duration: 1 }}
             className="md:w-1/2 flex flex-col justify-center p-4"
           >
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">
-              Unleash the Art of Photography
+            <h1 className="md:text-7xl text-4xl font-bold text-gray-800 mb-4">
+              Unleash the <br/>Art of <br/>Photography
             </h1>
             <p className="text-lg text-gray-600 mb-6">
               At Capture Studio, we specialize in capturing life’s most precious
@@ -48,34 +48,38 @@ const Hero = () => {
           </motion.div>
 
           {/* Image Section */}
-          <div className="md:w-1/2 flex flex-col gap-4">
-            <motion.div
-              whileInView={{ scale: 1.1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <Image
-                src={images[0]}
-                alt="Main Hero Image"
-                width={400}
-                height={400}
-                className="rounded-lg object-cover "
-              />
-            </motion.div>
-            <div className="flex gap-4 mt-4">
-              {images.slice(1).map((src, index) => (
-                <motion.div key={index} whileHover={{ scale: 1.05 }}>
-                  <Image
-                    src={src}
-                    alt={`Thumbnail ${index + 1}`}
-                    width={300}
-                    height={200}
-                    className="rounded-lg object-cover w-full"
-                  />
-                </motion.div>
-              ))}
-            </div>
+          <div className="md:w-1/2 flex flex-col items-center md:items-start gap-4">
+          {/* Main Image */}
+          <motion.div
+            whileInView={{ scale: 1.05 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="w-full"
+          >
+            <Image
+              src={images[0]}
+              alt="Main Hero Image"
+              width={600}
+              height={360}
+              className="rounded-lg object-cover md:w-full w-[22rem]  h-[30vh]"
+            />
+          </motion.div>
+
+          {/* Thumbnails */}
+          <div className="md:right-[15px] flex flex-col sm:flex-row md:gap-5 gap-3 md:w-[74.6vh] w-[22.5rem] relative">
+            {images.slice(1).map((src, index) => (
+              <motion.div key={index} whileHover={{ scale: 1.05 }} className="flex-1">
+                <Image
+                  src={src}
+                  alt={`Thumbnail ${index + 1}`}
+                  width={300}
+                  height={200}
+                  className="rounded-lg object-cover md:w-[39rem] w-[27rem] md:h-[20vh]"
+                />
+              </motion.div>
+            ))}
           </div>
+        </div>
         </div>
       </div>
     </div>
