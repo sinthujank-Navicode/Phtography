@@ -8,6 +8,7 @@ import GalleryPage from "./components/Sections/Gallery";
 import HeroSection from "./components/Sections/Experience";
 import Expertise from "./components/Sections/expect";
 import VideoSection from "./components/Sections/VideoSection";
+import Wedding from "./components/Sections/wedding";
 export default function Home() {
   return (
     <div>
@@ -20,6 +21,7 @@ export default function Home() {
       <div className="explore-section">
         <Expertise />
       </div>
+      <Wedding />
       <div className="creativity-section">
         <CreativitySection />
       </div>
@@ -32,6 +34,7 @@ export default function Home() {
       <div className="video-section w-fit">
         <VideoSection />
       </div>
+
       <div className="explore-section">
         <StudioLayout />
       </div>
