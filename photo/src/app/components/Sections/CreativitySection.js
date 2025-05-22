@@ -1,154 +1,99 @@
-// components/CreativitySection.js
-"use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
-const images = [
-  "/images/unmatch.jpg",
-  "/images/unmatch1.jpg",
-  "/images/unmatch2.jpg",
-  "/images/unmatch4.webp",
+const stats = [
+  { value: "550+", label: "Happy Clients" },
+  { value: "38+", label: "Awards Won" },
+  { value: "9000+", label: "Captured Events" },
 ];
 
-const Counter = ({ end }) => {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    let start = 0;
-    const duration = 2000;
-    const step = (end / duration) * 20;
-    const interval = setInterval(() => {
-      start += step;
-      if (start >= end) {
-        start = end;
-        clearInterval(interval);
-      }
-      setCount(Math.floor(start));
-    }, 10);
-  }, [end]);
-
-  return <span>{count}+</span>;
-};
-
-const CreativitySection = () => {
+export default function CreativitySection() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center p-4 gap-6">
-      <div className="flex justify-center gap-4 md:w-1/2 w-full bg-pink-100 p-4 sm:p-6 lg:p-10 rounded-2xl">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 rounded-2xl">
-          {/* First Image */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="col-span-2 sm:col-span-2 lg:col-span-2 row-span-4 lg:row-span-3 rounded-xl overflow-hidden shadow-md"
-          >
+    <section className="min-h-[70vh]  py-16 px-4 md:px-5 flex flex-col md:flex-row items-center justify-center gap-16">
+      {/* Image Collage */}
+      <div className="w-full bg-pink-100 p-2 md:p-0 md:mr-12">
+        <div className="relative grid grid-cols-1 md:grid-cols-5 grid-rows-4 md:p-6 md:ml-22 md:grid-rows-2 gap-2 w-full md:h-[60vh]">
+          {/* Image2 placed inside the L-cutout */}
+          <div className="absolute hidden md:block left-[15rem] top-[18rem] w-[12.5rem] h-[15.5rem]">
             <Image
-              src={images[0]}
-              alt="Creative Image 1"
+              src="/img1.jpg"
+              alt="img2"
+              width={200}
+              height={200}
+              className="w-full h-full object-cover rounded-lg "
+            />
+          </div>
+          <div className="relative rounded-xl overflow-hidden md:col-span-2 md:row-span-2 md:[clip-path:polygon(0%_0%,100%_0%,100%_50%,50%_50%,50%_100%,0%_100%)]">
+            {/* Background image (L-shape) */}
+            <Image
+              src="/img1.jpg"
+              alt="img1"
               width={400}
-              height={600}
-              className="object-cover w-full h-full"
+              height={400}
+              className="w-full h-full object-cover"
             />
-          </motion.div>
 
-          {/* Second Image */}
-          <motion.div
-            key={1}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="rounded-xl overflow-hidden shadow-md row-span-4 col-span-1"
-          >
-            <Image
-              src={images[1]}
-              alt="Creative Image 2"
-              width={400}
-              height={300}
-              className="object-cover w-full h-full rounded-2xl"
-            />
-          </motion.div>
+            {/* Image2 placed inside the L-cutout */}
+            <div className="absolute z-50">
+              <Image
+                src="/img1.jpg"
+                alt="img2"
+                width={200}
+                height={200}
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+          </div>
 
-          {/* Third Image */}
-          <motion.div
-            key={2}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.4 }}
-            className="rounded-xl overflow-hidden shadow-md row-span-1 col-span-1"
-          >
+          <div className="rounded-xl overflow-hidden md:col-start-3 md:row-span-2">
             <Image
-              src={images[2]}
-              alt="Creative Image 3"
-              width={300}
-              height={300}
-              className="object-cover w-full h-full rounded-2xl"
+              src="/img1.jpg"
+              alt="img2"
+              width={200}
+              height={400}
+              className="w-full h-full object-cover"
             />
-          </motion.div>
-
-          {/* Fourth Image  */}
-          <motion.div
-            key={3}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.6 }}
-            className="rounded-xl overflow-hidden shadow-md row-span-1 col-span-1"
-          >
+          </div>
+          <div className="rounded-xl overflow-hidden md:col-start-4">
             <Image
-              src={images[3]}
-              alt="Creative Image 4"
-              width={300}
-              height={300}
-              className="object-cover w-full h-full rounded-2xl"
+              src="/img1.jpg"
+              alt="img3"
+              width={150}
+              height={200}
+              className="w-full h-full object-cover"
             />
-          </motion.div>
+          </div>
+          <div className="rounded-xl overflow-hidden md:col-start-4 md:row-start-2">
+            <Image
+              src="/img1.jpg"
+              alt="img4"
+              width={150}
+              height={200}
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
       </div>
 
-      {/* Text and Counters */}
-      <div className="md:w-1/2 w-full text-center md:text-left p-4">
-        <motion.h2
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 50 }}
-          className=" sm:text-3xl md:text-4xl font-bold mb-4 text-gray-600"
-        >
-          Unmatched Creativity
-        </motion.h2>{" "}
-        <br />
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="mb-6 text-gray-700 text-sm sm:text-base md:text-lg"
-        >
+      {/* Text Content */}
+      <div className="max-w-xl text-center md:text-left flex flex-col justify-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+          Unmatched <br /> Creativity
+        </h2>
+        <p className="text-gray-600 mb-8 text-base md:text-lg">
           With over 10 years of experience, we have captured countless moments
-          and crafted stunning visuals.Our team&apos;s dedication and passion
-          have led to numerous awards and...
-        </motion.p>
-        <div className="flex flex-wrap gap-4 justify-center md:justify-start text-gray-800 md:mt-[4rem]">
-          <div className="text-lg sm:text-xl md:text-sm font-bold">
-            <p className="md:text-2xl">
-              <Counter end={550} />
-            </p>
-            <p className="text-gray-500 md:text-sm">Happy Clients</p>
-          </div>
-          <div className="text-lg sm:text-xl md:text-sm font-bold">
-            <p className="md:text-2xl">
-              <Counter end={38} />
-            </p>
-            <p className="text-gray-500 ">Awards Won</p>
-          </div>
-          <div className="text-lg sm:text-xl md:text-sm font-bold">
-            <p className="md:text-2xl">
-              <Counter end={9000} />
-            </p>
-            <p className="text-gray-500">Captured Events</p>
-          </div>
+          and crafted stunning visuals. Our team's dedication and passion have
+          led to numerous awards and...
+        </p>
+
+        <div className="flex flex-wrap justify-center md:justify-start gap-8">
+          {stats.map((stat, i) => (
+            <div key={i}>
+              <p className="text-3xl font-bold text-gray-800">{stat.value}</p>
+              <p className="text-gray-600 text-sm">{stat.label}</p>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default CreativitySection;
+}
