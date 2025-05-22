@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const images = [
-  "/images/thumb1.jpg",
-  "/images/thumb1.jpg",
-  "/images/thumb1.jpg",
-  "/images/vintage-camera.jpg",
+  "/images/unmatch.jpg",
+  "/images/unmatch1.jpg",
+  "/images/unmatch2.jpg",
+  "/images/unmatch4.webp",
 ];
 
 const Counter = ({ end }) => {

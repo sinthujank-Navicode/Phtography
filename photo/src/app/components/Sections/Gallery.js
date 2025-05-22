@@ -1,12 +1,18 @@
 import Image from "next/image";
 
 const images = [
-  { src: "/images/img1.jpg", classes: "col-span-2" },
-  { src: "/images/img1.jpg", classes: "col-start-3 row-start-1" },
-  { src: "/images/img1.jpg", classes: "row-span-2 col-start-1 row-start-2" },
-  { src: "/images/img1.jpg", classes: "col-span-2 col-start-2 row-start-2" },
-  { src: "/images/img1.jpg", classes: "col-start-2 row-start-3" },
-  { src: "/images/img1.jpg", classes: "col-start-3 row-start-3" },
+  { src: "/images/gallery1.jpg", classes: "col-span-2" },
+  { src: "/images/gallery8.jpg", classes: "col-start-3 row-start-1" },
+  {
+    src: "/images/gallery9.jpg",
+    classes: "row-span-2 col-start-1 row-start-2",
+  },
+  {
+    src: "/images/gallery3.jpg",
+    classes: "col-span-2 col-start-2 row-start-2",
+  },
+  { src: "/images/gallery5.jpg", classes: "col-start-2 row-start-3" },
+  { src: "/images/gallery2.jpg", classes: "col-start-3 row-start-3" },
 ];
 
 export default function GalleryPage() {
@@ -24,7 +30,7 @@ export default function GalleryPage() {
 
       {/* Gallery Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 md:gap-7 gap-1 max-w-7xl mx-auto  h-auto md:h-[90vh]">
-      {images.map((img, index) => (
+        {images.map((img, index) => (
           <div key={index} className={`${img.classes} p-1`}>
             <Image
               src={img.src}

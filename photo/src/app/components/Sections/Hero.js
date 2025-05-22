@@ -4,11 +4,7 @@ import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { motion, useAnimation } from "framer-motion";
 
-const images = [
-  "/images/thumb1.jpg",
-  "/images/thumb1.jpg",
-  "/images/thumb1.jpg",
-];
+const images = ["/images/hero1.webp", "/images/hero6.jpg", "/images/hero5.jpg"];
 
 const Hero = () => {
   const controls = useAnimation();
@@ -19,7 +15,7 @@ const Hero = () => {
 
   return (
     <div>
-      <div className="min-h-[70vh]  flex items-center justify-center p-4 sm:p-6 overflow-x-hidden">
+      <div className="min-h-[80vh]  flex items-center justify-center p-4 sm:p-6 overflow-x-hidden">
         <div className="w-full max-w-[83rem] flex flex-col md:flex-row md:items-center gap-12">
           {/* Text Section */}
           <motion.div
@@ -42,7 +38,7 @@ const Hero = () => {
                 scale: 1.05,
                 boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.2)",
               }}
-              className="bg-red-600 text-white font-semibold rounded-md px-6 py-2 w-max flex items-center gap-2"
+              className="bg-red-600 text-white font-semibold rounded-md px-6 py-3 w-max flex items-center gap-2"
             >
               Book Your Session Now
               <ChevronRight size={16} />
@@ -58,20 +54,21 @@ const Hero = () => {
               alt="Main Hero Image"
               width={600}
               height={400}
-              className="rounded-lg object-cover w-[24rem] md:w-[47rem] aspect-[3/2] md:h-[22rem] "
+              className="rounded-lg object-cover w-[24rem] md:w-[40rem] aspect-[3/2] md:h-[22rem] "
             />
 
             {/* Thumbnails */}
             <div className="flex flex-col sm:flex-row gap-3 md:gap-5 w-full max-w-[40rem]">
               {images.slice(1).map((src, index) => (
-                <Image
-                  key={index}
-                  src={src}
-                  alt={`Thumbnail ${index + 1}`}
-                  width={400}
-                  height={267}
-                  className="rounded-lg object-cover w-full aspect-[3/2] h-auto"
-                />
+                <div key={index} className="w-full sm:w-1/2">
+                  <Image
+                    src={src}
+                    alt={`Thumbnail ${index + 1}`}
+                    width={400}
+                    height={267}
+                    className="rounded-lg object-cover w-full aspect-[3/2] h-auto"
+                  />
+                </div>
               ))}
             </div>
           </div>

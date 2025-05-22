@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 const expertiseData = [
   {
-    imgSrc: "/images/thumb1.jpg",
+    imgSrc: "/images/map.jpg",
     title: "Map",
   },
   {

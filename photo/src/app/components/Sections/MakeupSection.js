@@ -52,12 +52,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col lg:flex-row justify-between items-center px-6 md:px-12 lg:px-24 py-12 md:pb-44">
         <div className="lg:w-1/2 space-y-6">
-          <p className="text-pink-600 italic text-2xl">Makeup Studio</p>
+          <p className="text-pink-600  text-2xl">Makeup Studio</p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 ">
-            ENJOY THE BEST <br /> MAKEUP SERVICES 
+            ENJOY THE BEST <br /> MAKEUP SERVICES
           </h1>
           <p className="text-md text-gray-700">
-          Get the perfect look for any occasion!          </p>
+            Get the perfect look for any occasion!{" "}
+          </p>
           <button className="bg-pink-700 text-white px-6 py-3  font-medium hover:bg-pink-800 transition">
             Book an Appointment
           </button>
@@ -65,7 +66,7 @@ export default function Home() {
         <div className="mt-8 lg:mt-0 lg:w-1/2 flex justify-center lg:h-94 md:absolute md:top-37 md:right-[-9.7rem]">
           <div className="border-9 border-white">
             <Image
-              src="/images/makeup.jpg"
+              src="/images/makeup2.jpg"
               alt="Nail Care"
               width={300}
               height={400}
@@ -77,12 +78,12 @@ export default function Home() {
 
       {/* Services Section */}
       <section className="bg-pink-50 py-16 px-6 md:px-12 lg:px-11 text-center">
-        <p className="text-pink-600 italic text-2xl">Our services</p>
+        <p className="text-pink-600  text-2xl">Our services</p>
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-        FEATURED MAKEUP SERVICES
+          FEATURED MAKEUP SERVICES
         </h2>
         <p className="text-gray-600 mb-10">
-        Professional makeup for all your special moments.
+          Professional makeup for all your special moments.
         </p>
 
         <div className="relative flex items-center justify-between">

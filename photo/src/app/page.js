@@ -10,6 +10,7 @@ import Expertise from "./components/Sections/expect";
 import MakeupSection from "./components/Sections/MakeupSection";
 import VideoSection from "./components/Sections/VideoSection";
 import Wedding from "./components/Sections/wedding";
+import ContactForm from "./components/Sections/ContactForm";
 export default function Home() {
   return (
     <div>
@@ -43,6 +44,9 @@ export default function Home() {
 
       <div className="explore-section">
         <StudioLayout />
+      </div>
+      <div className="contact-form">
+        <ContactForm />
       </div>
     </div>
   );
