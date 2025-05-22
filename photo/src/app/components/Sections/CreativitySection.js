@@ -11,7 +11,7 @@ export default function CreativitySection() {
     <section className="min-h-[70vh]  py-16 px-4 md:px-5 flex flex-col md:flex-row items-center justify-center gap-16">
       {/* Image Collage */}
       <div className="w-full bg-pink-100 p-2 md:p-0 md:mr-12">
-        <div className="relative grid grid-cols-1 md:grid-cols-5 grid-rows-4 md:p-6 md:ml-22 md:grid-rows-2 gap-2 w-full md:h-[60vh]">
+        <div className="relative grid grid-cols-1 md:grid-cols-5 grid-rows-4 md:p-6 md:ml-22 md:grid-rows-2 gap-6 w-full md:h-[60vh]">
           {/* Image2 placed inside the L-cutout */}
           <div className="absolute hidden md:block left-[15rem] top-[18rem] w-[12.5rem] h-[15.5rem]">
             <Image
@@ -76,10 +76,10 @@ export default function CreativitySection() {
 
       {/* Text Content */}
       <div className="max-w-xl text-center md:text-left flex flex-col justify-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6  leading-tight">
           Unmatched <br /> Creativity
         </h2>
-        <p className="text-gray-600 mb-8 text-base md:text-lg">
+        <p className="text-gray-600 mb-8 text-base md:text-lg md:mb-[13rem]">
           With over 10 years of experience, we have captured countless moments
           and crafted stunning visuals. Our team's dedication and passion have
           led to numerous awards and...
