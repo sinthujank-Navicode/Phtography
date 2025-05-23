@@ -29,7 +29,7 @@ export default function Wedding() {
         </p>
 
         {/* Button */}
-        <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-6 rounded-full transition duration-300 shadow-md">
+        <button className="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-full transition duration-300 shadow-md">
           BOOK NOW !
         </button>
       </div>

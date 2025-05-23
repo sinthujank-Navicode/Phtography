@@ -63,7 +63,7 @@ export default function ExpertiseSection() {
       </p>
 
       <div className="flex justify-center md:justify-start">
-        <button className="bg-red-500 text-white px-3 py-1 md:px-4 md:py-2 rounded mb-4 md:mb-8">
+        <button className="bg-red-600 text-white px-3 py-1 md:px-4 md:py-2 rounded mb-4 md:mb-8">
           Request a Consultation
         </button>
       </div>

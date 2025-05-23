@@ -11,9 +11,9 @@ export default function CreativitySection() {
     <section className="min-h-[70vh]  py-16 px-4 md:px-5 flex flex-col md:flex-row items-center justify-center gap-16">
       {/* Image Collage */}
       <div className="w-full bg-pink-100 p-2 md:p-0 md:mr-12">
-        <div className="relative grid grid-cols-1 md:grid-cols-5 grid-rows-4 md:p-6 md:ml-22 md:grid-rows-2 gap-6 w-full md:h-[60vh]">
+        <div className="relative grid grid-cols-1 md:grid-cols-5 grid-rows-4 md:p-6 md:ml-22 md:grid-rows-2 gap-5 w-full md:h-[60vh]">
           {/* Image2 placed inside the L-cutout */}
-          <div className="absolute hidden md:block left-[15rem] top-[18rem] w-[12.5rem] h-[15.5rem]">
+          <div className="absolute hidden md:block left-[11.7rem] top-[15rem] w-[8rem] h-[11.4rem]">
             <Image
               src="/img1.jpg"
               alt="img2"

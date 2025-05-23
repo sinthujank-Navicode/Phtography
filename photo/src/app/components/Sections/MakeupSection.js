@@ -59,7 +59,7 @@ export default function Home() {
           <p className="text-md text-gray-700">
             Get the perfect look for any occasion!{" "}
           </p>
-          <button className="bg-pink-700 text-white px-6 py-3  font-medium hover:bg-pink-800 transition">
+          <button className="bg-red-600 text-white px-6 py-3  font-medium hover:bg-pink-800 transition">
             Book an Appointment
           </button>
         </div>
