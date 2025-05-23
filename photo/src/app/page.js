@@ -11,9 +11,11 @@ import MakeupSection from "./components/Sections/MakeupSection";
 import VideoSection from "./components/Sections/VideoSection";
 import Wedding from "./components/Sections/wedding";
 import ContactForm from "./components/Sections/ContactForm";
+import FloatingSocialButton from "./components/Sections/FloatingSocialButton";
 export default function Home() {
   return (
     <div>
+      <FloatingSocialButton />
       <div className="heros-section">
         <Hero />
       </div>

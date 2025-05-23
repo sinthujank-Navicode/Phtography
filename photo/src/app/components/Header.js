@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X ,Facebook, Instagram} from "lucide-react";
+import { Menu, X, Facebook, Instagram } from "lucide-react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,14 +36,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        {/* <div className=" space-x-4 mt-4 sm:mt-0 hidden md:flex">
-          <a href="https://www.facebook.com/p/FX-creation-Studio-100069234291790/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-blue-600">
-            <Facebook size={25} />
-          </a>
-          <a href="https://www.instagram.com/fx_creation_studio/p/DDMMzxwTodL/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-pink-500">
-            <Instagram size={25} />
-          </a>
-        </div> */}
+
         {/* Hire Us Button */}
         <div className="hidden md:block">
           <button className="border border-red-400 text-red-500 hover:bg-red-100 px-4 py-2 rounded-md">
@@ -73,22 +66,13 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
-            <li><div className="flex space-x-4 mt-4 md:hidden">
-  <a href="https://www.facebook.com/p/FX-creation-Studio-100069234291790/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-blue-600">
-    <Facebook size={20} />
-  </a>
-  <a href="https://www.instagram.com/fx_creation_studio/p/DDMMzxwTodL/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-pink-500">
-    <Instagram size={20} />
-  </a>
-</div>
-</li>
+
             <li>
               <button className="border border-red-400 text-red-500 hover:bg-red-100 px-4 py-2 rounded-md w-full">
                 Hire Us
               </button>
             </li>
           </ul>
-        
         </div>
       )}
     </header>

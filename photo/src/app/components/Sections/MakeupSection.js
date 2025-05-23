@@ -59,7 +59,7 @@ export default function Home() {
           <p className="text-md text-gray-700">
             Get the perfect look for any occasion!{" "}
           </p>
-          <button className="bg-red-600 text-white px-6 py-3  font-medium hover:bg-pink-800 transition">
+          <button className="bg-red-600 text-white px-6 py-3  font-medium hover:bg-pink-800 transition rounded-lg">
             Book an Appointment
           </button>
         </div>
@@ -77,7 +77,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="bg-pink-50 py-16 px-6 md:px-12 lg:px-11 text-center">
+      <section className="bg-pink-100 py-16 px-6 md:px-12 lg:px-11 text-center">
         <p className="text-pink-600  text-2xl">Our services</p>
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
           FEATURED MAKEUP SERVICES

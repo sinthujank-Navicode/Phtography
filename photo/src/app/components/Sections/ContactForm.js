@@ -31,7 +31,7 @@ export default function ContactForm() {
   return (
     <div className="min-h-screen bg-pink-50 flex items-center justify-center px-4 py-12">
       <div className="max-w-xl w-full">
-        <h2 className="text-4xl font-extrabold text-pink-700 text-center mb-8">
+        <h2 className="text-4xl font-extrabold text-red-600 text-center mb-8">
           Contact Me
         </h2>
         <form
@@ -48,7 +48,7 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="name"
-              className="block text-pink-700 font-semibold mb-2"
+              className="block text-red-600 font-semibold mb-2"
             >
               Name
             </label>
@@ -65,7 +65,7 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="email"
-              className="block text-pink-700 font-semibold mb-2"
+              className="block text-red-600 font-semibold mb-2"
             >
               Email
             </label>
@@ -82,7 +82,7 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="message"
-              className="block text-pink-700 font-semibold mb-2"
+              className="block text-red-600 font-semibold mb-2"
             >
               Message
             </label>

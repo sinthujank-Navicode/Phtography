@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Wedding() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-pink-100">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-pink-50 to-pink-100">
       <div className="text-center p-6 max-w-3xl">
         {/* Heading */}
-        <h1 className="text-4xl md:text-5xl font-extrabold text-pink-600 mb-2">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-red-600 mb-2">
           WEDDING SEASON
         </h1>
         <p className="text-gray-600 mb-6">
@@ -24,7 +24,7 @@ export default function Wedding() {
         </div>
 
         {/* Car Types */}
-        <p className="text-pink-700 font-medium mb-4">
+        <p className="text-red-600 font-medium mb-4">
           Car | Jeep | Hiace | Bus
         </p>
 
