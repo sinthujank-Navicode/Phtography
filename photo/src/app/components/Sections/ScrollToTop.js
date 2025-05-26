@@ -1,4 +1,5 @@
 "use client";
+import { FaArrowAltCircleUp } from "react-icons/fa";
 
 import { useEffect, useState } from "react";
 
@@ -23,9 +24,9 @@ const ScrollToTop = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="bg-blue-900 text-white rounded-full w-12 h-12 flex items-center justify-center animate-pulse hover:bg-blue-700 transition duration-300"
+          className="bg-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center "
         >
-          ↑
+          <FaArrowAltCircleUp />
         </button>
       )}
     </div>

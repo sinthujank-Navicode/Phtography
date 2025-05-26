@@ -49,7 +49,7 @@ const Hero = () => {
                 href="https://facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-red-600 hover:text-red-800 bg-white rounded-full p-2 shadow transition"
+                className="text-blue-800  bg-white rounded-full p-2 shadow transition"
                 aria-label="Facebook"
               >
                 <FaFacebookF size={22} />

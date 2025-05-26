@@ -9,10 +9,10 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "Services", href: "#services" },
+    { name: "Services", href: "#Makeup" },
     { name: "About Us", href: "#about" },
     { name: "Portfolio", href: "#portfolio" },
-    { name: "Makeup", href: "#Makeup" },
+    // { name: "Makeup", href: "#Makeup" },
     { name: "Contact", href: "#Contact" },
   ];
 
@@ -31,7 +31,7 @@ export default function Navbar() {
             <li key={item.name}>
               <Link
                 href={item.href}
-                className="text-[#3d3f4c] hover:text-black overflow-hidden"
+                className="text-[#3d3f4c] hover:text-red-600 overflow-hidden"
               >
                 {item.name}
               </Link>
