@@ -78,6 +78,30 @@ export default function ContactForm() {
               placeholder="abcd@example.com"
             />
           </div>
+          <div>
+            <label
+              htmlFor="service"
+              className="block text-red-600 font-semibold mb-2"
+            >
+              Select Service
+            </label>
+            <select
+              id="service"
+              name="service"
+              required
+              className="w-full p-3 border border-pink-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300 text-black"
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Choose a service
+              </option>
+              <option value="Wedding Photography">Wedding Photography</option>
+              <option value="Portrait Session">Portrait Session</option>
+              <option value="Event Coverage">Event Coverage</option>
+              <option value="Product Shoot">Product Shoot</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
 
           <div>
             <label

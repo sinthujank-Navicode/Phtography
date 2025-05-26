@@ -25,10 +25,10 @@ export default function Home() {
       <div className="explore-section">
         <Expertise />
       </div>
-      <div className="makeup-section">
+      <div className="makeup-section" id="Makeup">
         <MakeupSection />
       </div>
-      <div className="carRent-section">
+      <div className="carRent-section" id="services">
         <Wedding />
       </div>
       <div className="creativity-section">
@@ -47,7 +47,7 @@ export default function Home() {
       <div className="explore-section">
         <StudioLayout />
       </div>
-      <div className="contact-form">
+      <div className="contact-form" id="Contact">
         <ContactForm />
       </div>
     </div>

@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { motion, useAnimation, useScroll, useTransform } from "framer-motion";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const images = ["/images/hero1.webp", "/images/hero6.jpg", "/images/hero5.jpg"];
 
@@ -42,6 +43,27 @@ const Hero = () => {
               At Capture Studio, we specialize in capturing life’s most precious
               moments, transforming them into timeless works of art.
             </p>
+            {/* Social Icons */}
+            <div className="flex gap-4 mb-4">
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-red-600 hover:text-red-800 bg-white rounded-full p-2 shadow transition"
+                aria-label="Facebook"
+              >
+                <FaFacebookF size={22} />
+              </a>
+              <a
+                href="https://instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-red-600 hover:text-red-800 bg-white rounded-full p-2 shadow transition"
+                aria-label="Instagram"
+              >
+                <FaInstagram size={22} />
+              </a>
+            </div>
             <motion.button
               whileHover={{
                 scale: 1.05,
